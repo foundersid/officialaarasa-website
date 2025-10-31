@@ -73,12 +73,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
-  // MODIFIED: Scroll to top button functionality (works on all pages)
+ // Scroll to top button functionality by Gemini
   const scrollToTopBtn = document.getElementById('scroll-to-top');
   
   if (scrollToTopBtn) {
     window.addEventListener('scroll', () => {
-      // Show button after scrolling 300px
+      // Show button after scrolling 300px down
       if (window.pageYOffset > 300) { 
         scrollToTopBtn.classList.remove('hidden');
       } else {
