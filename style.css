@@ -11,8 +11,9 @@ header {
 }
 
 /* Mobile scrollable sections & compact layout */
+
 @media (max-width: 768px) {
-  /* What makes carob special - 1-box scroll */
+  /* --- What makes carob special --- */
   #comparison .box-border.gap-x-8 {
     display: flex !important;
     flex-wrap: nowrap !important;
@@ -22,14 +23,22 @@ header {
     padding-bottom: 1rem !important;
     gap: 1rem !important;
   }
-  
+
   #comparison .box-border.gap-x-8 > div {
-    min-width: 100% !important; /* 1 box visible */
+    min-width: 100% !important; /* show only 1 box at a time */
     flex-shrink: 0 !important;
-    scroll-snap-align: start !important;
+    scroll-snap-align: center !important;
   }
 
-  /* 6 Reasons to love carob - 2-box scroll */
+  #comparison .box-border.gap-x-8::-webkit-scrollbar {
+    display: none;
+  }
+  #comparison .box-border.gap-x-8 {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* --- 6 Reasons to love carob --- */
   #benefits .box-border.gap-x-8 {
     display: flex !important;
     flex-wrap: nowrap !important;
@@ -39,12 +48,21 @@ header {
     padding-bottom: 1rem !important;
     gap: 1rem !important;
   }
-  
+
   #benefits .box-border.gap-x-8 > div {
-    min-width: calc(50% - 0.5rem) !important; /* 2 boxes visible */
+    min-width: 48% !important; /* show 2 boxes at a time */
     flex-shrink: 0 !important;
-    scroll-snap-align: start !important;
+    scroll-snap-align: center !important;
   }
+
+  #benefits .box-border.gap-x-8::-webkit-scrollbar {
+    display: none;
+  }
+  #benefits .box-border.gap-x-8 {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
 
   /* Reduce section padding */
   section {
