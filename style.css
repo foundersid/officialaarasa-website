@@ -10,15 +10,15 @@ header {
   top: 0 !important;
 }
 
-/* Mobile scrollable comparison section */
+/* Compact mobile layout */
 @media (max-width: 768px) {
-/* What makes carob special - 1-box scroll */
+  /* What makes carob special - 1-box scroll */
   #comparison .box-border.gap-x-8 {
     display: flex !important;
     flex-wrap: nowrap !important;
     overflow-x: auto !important;
     scroll-snap-type: x mandatory !important;
-    -webkit-overflow-scrolling: touch !important; /* Corrected typo */
+    -webkit-overflow-scrolling: touch !important;
     padding-bottom: 1rem !important;
     gap: 1rem !important;
   }
@@ -45,10 +45,7 @@ header {
     flex-shrink: 0 !important;
     scroll-snap-align: start !important; /* Changed from center */
   }
-}
 
-/* Compact mobile layout */
-@media (max-width: 768px) {
   /* Reduce section padding */
   section {
     padding-top: 2rem !important;
