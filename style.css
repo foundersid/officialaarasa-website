@@ -12,59 +12,72 @@ header {
 
 /* Mobile scrollable sections & compact layout */
 
+/* --- MOBILE HORIZONTAL SCROLL FIX --- */
 @media (max-width: 768px) {
-  /* --- What makes carob special --- */
-  #comparison .box-border.gap-x-8 {
+  /* --- WHAT MAKES CAROB SPECIAL --- */
+  #comparison .box-border,
+  #comparison .grid {
     display: flex !important;
     flex-wrap: nowrap !important;
+    flex-direction: row !important;
     overflow-x: auto !important;
+    overflow-y: hidden !important;
     scroll-snap-type: x mandatory !important;
     -webkit-overflow-scrolling: touch !important;
-    padding-bottom: 1rem !important;
     gap: 1rem !important;
+    padding-bottom: 1rem !important;
   }
 
-  #comparison .box-border.gap-x-8 > div {
-    min-width: 100% !important; /* show only 1 box at a time */
+  #comparison .box-border > div,
+  #comparison .grid > div {
+    min-width: 100% !important; /* 1 box visible */
     flex-shrink: 0 !important;
     scroll-snap-align: center !important;
   }
 
-  #comparison .box-border.gap-x-8::-webkit-scrollbar {
+  #comparison .box-border::-webkit-scrollbar,
+  #comparison .grid::-webkit-scrollbar {
     display: none;
   }
-  #comparison .box-border.gap-x-8 {
+  #comparison .box-border,
+  #comparison .grid {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
 
-  /* --- 6 Reasons to love carob --- */
-  #benefits .box-border.gap-x-8 {
+  /* --- 6 REASONS TO LOVE CAROB --- */
+  #benefits .box-border,
+  #benefits .grid {
     display: flex !important;
     flex-wrap: nowrap !important;
+    flex-direction: row !important;
     overflow-x: auto !important;
+    overflow-y: hidden !important;
     scroll-snap-type: x mandatory !important;
     -webkit-overflow-scrolling: touch !important;
-    padding-bottom: 1rem !important;
     gap: 1rem !important;
+    padding-bottom: 1rem !important;
   }
 
-  #benefits .box-border.gap-x-8 > div {
-    min-width: 48% !important; /* show 2 boxes at a time */
+  #benefits .box-border > div,
+  #benefits .grid > div {
+    min-width: 48% !important; /* 2 boxes visible */
     flex-shrink: 0 !important;
     scroll-snap-align: center !important;
   }
 
-  #benefits .box-border.gap-x-8::-webkit-scrollbar {
+  #benefits .box-border::-webkit-scrollbar,
+  #benefits .grid::-webkit-scrollbar {
     display: none;
   }
-  #benefits .box-border.gap-x-8 {
+  #benefits .box-border,
+  #benefits .grid {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
 }
 
-  /* Reduce section padding */
+/* Reduce section padding */
   section {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
