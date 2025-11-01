@@ -12,54 +12,24 @@ header {
 
 /* Mobile scrollable comparison section */
 @media (max-width: 768px) {
-
-/* This new rule makes the "6 Reasons" section scrollable */
-#benefits .box-border.gap-x-8 {
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  overflow-x: auto !important;
-  scroll-snap-type: x mandatory !important;
-  -webkit-overflow-scrolling: touch !important;
-  padding-bottom: 1rem !important;
-  gap: 1rem !important;
-}
-
-#benefits .box-border.gap-x-8 > div {
-  min-width: 70% !important; /* A bit smaller for the smaller cards */
-  flex-shrink: 0 !important;
-  scroll-snap-align: center !important;
-}
-
-  
+/* What makes carob special - 1-box scroll */
   #comparison .box-border.gap-x-8 {
     display: flex !important;
     flex-wrap: nowrap !important;
     overflow-x: auto !important;
     scroll-snap-type: x mandatory !important;
-    -webkit-overflow-scrolling: touch !important;
+    -webkit-overflow-scrolling: touch !important; /* Corrected typo */
     padding-bottom: 1rem !important;
     gap: 1rem !important;
   }
   
   #comparison .box-border.gap-x-8 > div {
-    min-width: 85% !important;
+    min-width: 100% !important; /* Changed from 85% to 100% */
     flex-shrink: 0 !important;
-    scroll-snap-align: center !important;
+    scroll-snap-align: start !important; /* Changed from center to start */
   }
 
-
-  
-  /* Hide scrollbar but keep functionality */
-  #comparison .box-border.gap-x-8::-webkit-scrollbar {
-    display: none;
-  }
-  
-  #comparison .box-border.gap-x-8 {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  /* ADDED: for 6 Reasons section */
+  /* 6 Reasons to love carob - 2-box scroll */
   #benefits .box-border.gap-x-8 {
     display: flex !important;
     flex-wrap: nowrap !important;
@@ -71,19 +41,9 @@ header {
   }
   
   #benefits .box-border.gap-x-8 > div {
-    min-width: 70% !important; /* 70% width for these smaller cards */
+    min-width: calc(50% - 0.5rem) !important; /* Set to 50% minus half the gap */
     flex-shrink: 0 !important;
-    scroll-snap-align: center !important;
-  }
-  
-  /* Hide scrollbar for benefits */
-  #benefits .box-border.gap-x-8::-webkit-scrollbar {
-    display: none;
-  }
-  
-  #benefits .box-border.gap-x-8 {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    scroll-snap-align: start !important; /* Changed from center */
   }
 }
 
