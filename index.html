@@ -3,177 +3,635 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anima App</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      content: [],
-      theme: {
-        extend: {
-          fontFamily: {
-            open_sans: ['Open Sans', 'sans-serif'],
-            inter: ['Inter', 'sans-serif'],
-            poppins: ['Poppins', 'sans-serif']
-          }
-        }
-      }
-    };
-  </script>
-  <link rel="stylesheet" href="styles.css">
+  <title>Aarasa - Not Coffee. Not Chocolate. A Caffeine-Free Superfood.</title>
 
-  <!-- Added scroll behavior only -->
-  <style>
-    @media (max-width: 768px) {
-      #comparison .scroll-wrapper,
-      #benefits .scroll-wrapper {
-        display: flex !important;
-        flex-wrap: nowrap !important;
-        flex-direction: row !important;
-        overflow-x: auto !important;
-        overflow-y: hidden !important;
-        -webkit-overflow-scrolling: touch !important;
-        scroll-snap-type: x mandatory !important;
-        gap: 1rem !important;
-        padding-bottom: 1rem !important;
-      }
+<meta name="description" content="Ancient Mediterranean Carob, Now Packed in India. A caffeine-free, high-fiber superfood.">
 
-      #comparison .scroll-wrapper > div {
-        min-width: 100% !important; /* 1 visible */
-        flex-shrink: 0 !important;
-        scroll-snap-align: center !important;
-      }
+<link rel="icon" type="image/png" sizes="32x32" href="https://c.animaapp.com/mgnyzqnsRTQUS5/img/png-01.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://c.animaapp.com/mgnyzqnsRTQUS5/img/png-01.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://c.animaapp.com/mgnyzqnsRTQUS5/img/png-01.png">
 
-      #benefits .scroll-wrapper > div {
-        min-width: 48% !important; /* 2 visible */
-        flex-shrink: 0 !important;
-        scroll-snap-align: center !important;
-      }
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://officialaarasa-website.pages.dev/">
+<meta property="og:title" content="Aarasa - Caffeine-Free Superfood">
+<meta property="og:description" content="Ancient Mediterranean Carob, Now Packed in India. Not coffee, not chocolate.">
+<meta property="og:image" content="https://c.animaapp.com/mgnyzqnsRTQUS5/img/product-dummy1.png">
 
-      #comparison .scroll-wrapper::-webkit-scrollbar,
-      #benefits .scroll-wrapper::-webkit-scrollbar {
-        display: none;
-      }
-
-      #comparison .scroll-wrapper,
-      #benefits .scroll-wrapper {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://officialaarasa-website.pages.dev/">
+<meta property="twitter:title" content="Aarasa - Caffeine-Free Superfood">
+<meta property="twitter:description" content="Ancient Mediterranean Carob, Now Packed in India. Not coffee, not chocolate.">
+<meta property="twitter:image" content="https://c.animaapp.com/mgnyzqnsRTQUS5/img/product-dummy1.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+  content: [],
+  theme: {
+    extend: {
+      fontFamily: {
+        open_sans: [
+          'Open Sans',
+          'sans-serif'
+        ],
+        inter: [
+          'Inter',
+          'sans-serif'
+        ],
+        poppins: [
+          'Poppins',
+          'sans-serif'
+        ]
       }
     }
+  }
+};
+</script>
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    @font-face {
+      font-family: 'Open Sans';
+      src: url('https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2') format("woff2");
+      font-weight: 400;
+      font-style: normal;
+    }
   </style>
+
+  <style>
+    @font-face {
+      font-family: 'Open Sans';
+      src: url('https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2') format("woff2");
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+
+  <style>
+    @font-face {
+      font-family: 'Open Sans';
+      src: url('https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2') format("woff2");
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+
+  <style>
+    @font-face {
+      font-family: 'Open Sans';
+      src: url('https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2') format("woff2");
+      font-weight: 600;
+      font-style: normal;
+    }
+  </style>
+
+  <style>
+    @font-face {
+      font-family: 'Open Sans';
+      src: url('https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2') format("woff2");
+      font-weight: 600;
+      font-style: normal;
+    }
+  </style>
+
+  <style>
+    @font-face {
+      font-family: 'Open Sans';
+      src: url('https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2') format("woff2");
+      font-weight: 600;
+      font-style: normal;
+    }
+  </style>
+
+  <style>
+    @font-face {
+      font-family: 'Poppins';
+      src: url('https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJfecg.woff2') format("woff2");
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+
+  <style>
+    @font-face {
+      font-family: 'Poppins';
+      src: url('https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2') format("woff2");
+      font-weight: 600;
+      font-style: normal;
+    }
+  </style>
+
+  <style>
+    @font-face {
+      font-family: 'Poppins';
+      src: url('https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2') format("woff2");
+      font-weight: 700;
+      font-style: normal;
+    }
+  </style>
+  <style>
+@media (max-width: 768px) {
+  #comparison .scroll-wrapper,
+  #benefits .scroll-wrapper {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-snap-type: x mandatory !important;
+    gap: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  #comparison .scroll-wrapper > div {
+    min-width: 100% !important; /* show 1 box */
+    flex-shrink: 0 !important;
+    scroll-snap-align: center !important;
+  }
+
+  #benefits .scroll-wrapper > div {
+    min-width: 48% !important; /* show 2 boxes */
+    flex-shrink: 0 !important;
+    scroll-snap-align: center !important;
+  }
+
+  #comparison .scroll-wrapper::-webkit-scrollbar,
+  #benefits .scroll-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  #comparison .scroll-wrapper,
+  #benefits .scroll-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+</style>  
 </head>
+<body class="text-zinc-800 ... font-open_sans">
+  <section class="relative bg-white box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] overflow-hidden">
+    <header class="sticky top-0 backdrop-blur bg-[oklab(0.999994_0.0000455678_0.0000200868_/_0.95)] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] z-50 border-b border-solid border-[oklch(0.967_0.003_264.542)]">
+      <div class="box-border caret-transparent max-w-screen-xl outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mx-auto px-4 py-3 md:py-4 md:px-8">
+        <div class="flex items-center justify-between gap-4">
+          <nav class="hidden md:flex items-center gap-1 flex-1">
+            <a href="#home" class="nav-link text-sm font-medium text-[oklch(0.373_0.034_259.733)] hover:text-green-700 px-3 py-2 rounded-lg transition-colors">Home</a>
+            <a href="about-us.html" class="nav-link text-sm font-medium text-[oklch(0.373_0.034_259.733)] hover:text-green-700 px-3 py-2 rounded-lg transition-colors">About Us</a>
+          </nav>
 
-<body class="text-zinc-800 font-open_sans bg-white">
+          <button id="mobile-menu-btn" class="md:hidden text-green-900 p-2" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
 
-  <!-- Other content unchanged above -->
+          <div class="flex-shrink-0">
+            <a href="#home">
+              <img src="https://c.animaapp.com/mgnyzqnsRTQUS5/img/png-01.png" alt="Aarasa" class="h-12 md:h-16 max-w-full" />
+            </a>
+          </div>
 
-  <!-- ========================= WHAT MAKES CAROB SPECIAL ========================= -->
-  <section id="comparison" class="bg-white py-16">
-    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
-      <h2 class="text-[oklch(0.21_0.034_264.665)] text-[32px] leading-[48px] text-center mb-12 font-poppins">
-        What Makes Carob Special?
-      </h2>
+          <nav class="hidden md:flex items-center gap-2 flex-1 justify-end">
+            <a href="faq.html" class="nav-link text-sm font-medium text-[oklch(0.373_0.034_259.733)] hover:text-green-700 px-3 py-2 rounded-lg transition-colors">FAQs</a>
+            <a href="#tally-form" class="nav-link text-sm font-medium text-white bg-green-700 hover:bg-green-800 px-4 py-2 rounded-lg transition-colors shadow-md">Buy Now</a>
+          </nav>
 
-      <!-- ✅ Wrapped with scroll-wrapper -->
-      <div class="scroll-wrapper box-border gap-x-8 grid grid-cols-none gap-y-8 md:grid-cols-[repeat(3,minmax(0px,1fr))]">
-        <!-- existing cards stay the same -->
-        <!-- CARD 1 -->
-        <div class="bg-green-100 shadow ... p-6 rounded-2xl border-2 border-green-900">
-          <!-- card content -->
+          <div class="md:hidden w-10"></div>
         </div>
 
-        <!-- CARD 2 -->
-        <div class="bg-[oklch(0.985_0.002_247.839)] border p-6 rounded-2xl border-solid border-[oklch(0.928_0.006_264.531)]">
-          <!-- card content -->
-        </div>
-
-        <!-- CARD 3 -->
-        <div class="bg-[oklch(0.985_0.002_247.839)] border p-6 rounded-2xl border-solid border-[oklch(0.928_0.006_264.531)]">
-          <!-- card content -->
-        </div>
+        <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-[oklch(0.967_0.003_264.542)] pt-4">
+          <div class="flex flex-col gap-2">
+            <a href="#home" class="mobile-nav-link text-sm font-medium text-[oklch(0.373_0.034_259.733)] hover:text-green-700 px-3 py-2 rounded-lg transition-colors">Home</a>
+            <a href="about-us.html" class="mobile-nav-link text-sm font-medium text-[oklch(0.373_0.034_259.733)] hover:text-green-700 px-3 py-2 rounded-lg transition-colors">About Us</a>
+            <a href="#faq" class="mobile-nav-link text-sm font-medium text-[oklch(0.373_0.034_259.733)] hover:text-green-700 px-3 py-2 rounded-lg transition-colors">FAQs</a>
+            <a href="#tally-form" class="mobile-nav-link text-sm font-medium text-white bg-green-700 hover:bg-green-800 px-4 py-2 rounded-lg transition-colors text-center">Buy Now</a>
+          </div>
+        </nav>
       </div>
-
-      <p class="text-[oklch(0.373_0.034_259.733)] text-lg leading-7 max-w-screen-md text-center mt-12 mx-auto">
-        Carob is its own unique superfood - not a substitute, but a superior choice for many.
-      </p>
+    </header>
+    <div class="box-border caret-transparent max-w-screen-xl outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mx-auto px-4 py-12 md:px-8 md:py-20"><div class="items-center box-border caret-transparent gap-x-12 grid grid-cols-none outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-12 md:grid-cols-[repeat(2,minmax(0px,1fr))]"><div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center md:text-left">
+<h1 class="text-[oklch(0.21_0.034_264.665)] text-3xl box-border caret-transparent leading-[40px] outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center mb-6 font-poppins md:text-5xl md:leading-[60px] md:text-left">Not Coffee.<br>Not Chocolate.<br>A Caffeine-Free Superfood.</h1>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center mb-8 md:text-2xl md:leading-8 md:text-left">Ancient Mediterranean Carob, Now Packed in India</p>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center md:text-left"><a href="#tally-form" class="text-white text-xl font-medium items-center bg-green-700 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] caret-transparent gap-x-2 inline-flex shrink-0 h-9 justify-center leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-2 text-nowrap mb-8 px-8 py-6 rounded-xl"><span class="box-border caret-transparent block outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-nowrap">BUY NOW - ₹299</span>
+</a>
+</div>
+<div class="box-border caret-transparent gap-x-4 grid grid-cols-[repeat(2,minmax(0px,1fr))] outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-4 text-center mt-8 md:grid-cols-[repeat(4,minmax(0px,1fr))]"><div class="items-center bg-green-100 box-border caret-transparent gap-x-2 flex flex-col outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-2 text-center p-3 rounded-xl md:text-left"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-5.svg" alt="Icon" class="text-green-900 box-border caret-transparent h-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center w-6 md:text-left" />
+<span class="text-xs box-border caret-transparent block leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center">Lab Tested</span>
+</div>
+<div class="items-center bg-green-100 box-border caret-transparent gap-x-2 flex flex-col outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-2 text-center p-3 rounded-xl md:text-left"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-6.svg" alt="Icon" class="text-green-900 box-border caret-transparent h-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center w-6 md:text-left" />
+<span class="text-xs box-border caret-transparent block leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center">FSSAI Approved</span>
+</div>
+<div class="items-center bg-green-100 box-border caret-transparent gap-x-2 flex flex-col outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-2 text-center p-3 rounded-xl md:text-left"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-7.svg" alt="Icon" class="text-green-900 box-border caret-transparent h-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center w-6 md:text-left" />
+<span class="text-xs box-border caret-transparent block leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center">100% Natural</span>
+</div>
+<div class="items-center bg-green-100 box-border caret-transparent gap-x-2 flex flex-col outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-2 text-center p-3 rounded-xl md:text-left"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-8.svg" alt="Icon" class="text-green-900 box-border caret-transparent h-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center w-6 md:text-left" />
+<span class="text-xs box-border caret-transparent block leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center">Spain Origin</span>
+</div>
+</div>
+</div>
+<div class="relative box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]"><div class="shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.25)_0px_25px_50px_-12px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] overflow-hidden rounded-2xl"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/img/product-dummy1.png" alt="Aarasa Carob Powder with drink" class="box-border caret-transparent max-w-full outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-full" />
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="comparison" class="bg-white box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] py-16"><div class="box-border caret-transparent max-w-screen-xl outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mx-auto px-4 md:px-8"><h2 class="text-[oklch(0.21_0.034_264.665)] text-[32px] box-border caret-transparent leading-[48px] outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center mb-12 font-poppins">What Makes Carob Special?</h2>
+<div class="scroll-wrapper box-border caret-transparent gap-x-8 grid grid-cols-none outline-[oklab(...)] gap-y-8 md:grid-cols-[repeat(3,minmax(0px,1fr))]">
+</div>
+<h3 class="text-green-900 text-2xl box-border caret-transparent leading-8 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] font-poppins">CAROB</h3>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]"><div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Caffeine</p>
+<p class="text-[oklch(0.21_0.034_264.665)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">0mg ✓</p>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Fiber</p>
+<p class="text-[oklch(0.21_0.034_264.665)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">37.9g per 100g ✓</p>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Taste</p>
+<p class="text-[oklch(0.21_0.034_264.665)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Naturally sweet, earthy</p>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Safe for</p>
+<p class="text-[oklch(0.21_0.034_264.665)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Everyone, anytime ✓</p>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Energy</p>
+<p class="text-[oklch(0.21_0.034_264.665)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Sustained, no crash ✓</p>
+</div>
+</div>
+</div>
+<div class="bg-[oklch(0.985_0.002_247.839)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] border p-6 rounded-2xl border-solid border-[oklch(0.928_0.006_264.531)]"><div class="items-center box-border caret-transparent gap-x-3 flex outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-3 mb-6"><div class="items-center bg-[oklch(0.707_0.022_261.325)] box-border caret-transparent flex h-12 justify-center outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-12 rounded-[3.35544e+07px]"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-10.svg" alt="Icon" class="text-white box-border caret-transparent h-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-6" />
+</div>
+<h3 class="text-[oklch(0.373_0.034_259.733)] text-2xl box-border caret-transparent leading-8 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] font-poppins">COFFEE</h3>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]"><div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Caffeine</p>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">95mg per cup</p>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Fiber</p>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">0g</p>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Taste</p>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Bitter</p>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Safe for</p>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Adults only, limited</p>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Energy</p>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Quick spike, then crash</p>
+</div>
+</div>
+</div>
+<div class="bg-[oklch(0.985_0.002_247.839)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] border p-6 rounded-2xl border-solid border-[oklch(0.928_0.006_264.531)]"><div class="items-center box-border caret-transparent gap-x-3 flex outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-3 mb-6"><div class="items-center bg-[oklch(0.707_0.022_261.325)] box-border caret-transparent flex h-12 justify-center outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-12 rounded-[3.35544e+07px]"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-11.svg" alt="Icon" class="text-white box-border caret-transparent h-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-6" />
+</div>
+<h3 class="text-[oklch(0.373_0.034_259.733)] text-2xl box-border caret-transparent leading-8 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] font-poppins">CHOCOLATE</h3>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]"><div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Caffeine</p>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">12-25mg</p>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Fiber</p>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">2-3g</p>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Taste</p>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Bitter (needs sugar)</p>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Safe for</p>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Limited for kids</p>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Energy</p>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Moderate stimulant</p>
+</div>
+</div>
+</div>
+</div>
+<p class="text-[oklch(0.373_0.034_259.733)] text-lg box-border caret-transparent leading-7 max-w-screen-md outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center mt-12 mx-auto">Carob is its own unique superfood - not a substitute, but a superior choice for many.</p>
+</div>
+</section>
+<section id="benefits" class="bg-white box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] py-16"><div class="box-border caret-transparent max-w-screen-xl outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mx-auto px-4 md:px-8"><h2 class="text-[oklch(0.21_0.034_264.665)] text-[32px] box-border caret-transparent leading-[48px] outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center mb-12 font-poppins">6 Reasons to Love Carob</h2>
+<div class="scroll-wrapper box-border caret-transparent gap-x-8 grid grid-cols-none outline-[oklab(...)] gap-y-8 mb-12 md:grid-cols-[repeat(3,minmax(0px,1fr))]">    
+<h3 class="text-[oklch(0.21_0.034_264.665)] text-base md:text-xl font-semibold box-border caret-transparent leading-6 md:leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2 md:mb-3 font-poppins">Better Gut Health</h3>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xs md:text-sm box-border caret-transparent leading-4 md:leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">37.9g fiber per 100g - supports digestion</p>
+</div>
+<div class="bg-green-100 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center p-4 rounded-2xl md:p-6"><div class="text-3xl md:text-5xl box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2 md:mb-4">☕</div>
+<h3 class="text-[oklch(0.21_0.034_264.665)] text-base md:text-xl font-semibold box-border caret-transparent leading-6 md:leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2 md:mb-3 font-poppins">Safe for Everyone</h3>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xs md:text-sm box-border caret-transparent leading-4 md:leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Zero caffeine - perfect for kids, pregnant women</p>
+</div>
+<div class="bg-green-100 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center p-4 rounded-2xl md:p-6"><div class="text-3xl md:text-5xl box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2 md:mb-4">💪</div>
+<h3 class="text-[oklch(0.21_0.034_264.665)] text-base md:text-xl font-semibold box-border caret-transparent leading-6 md:leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2 md:mb-3 font-poppins">Heart-Healthy</h3>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xs md:text-sm box-border caret-transparent leading-4 md:leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">0.5g fat, 0mg cholesterol</p>
+</div>
+<div class="bg-green-100 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center p-4 rounded-2xl md:p-6"><div class="text-3xl md:text-5xl box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2 md:mb-4">⚡</div>
+<h3 class="text-[oklch(0.21_0.034_264.665)] text-base md:text-xl font-semibold box-border caret-transparent leading-6 md:leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2 md:mb-3 font-poppins">Natural Energy</h3>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xs md:text-sm box-border caret-transparent leading-4 md:leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">No jitters, no crash</p>
+</div>
+<div class="bg-green-100 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center p-4 rounded-2xl md:p-6"><div class="text-3xl md:text-5xl box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2 md:mb-4">🍯</div>
+<h3 class="text-[oklch(0.21_0.034_264.665)] text-base md:text-xl font-semibold box-border caret-transparent leading-6 md:leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2 md:mb-3 font-poppins">Naturally Sweet</h3>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xs md:text-sm box-border caret-transparent leading-4 md:leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Reduce added sugar</p>
+</div>
+<div class="bg-green-100 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center p-4 rounded-2xl md:p-6"><div class="text-3xl md:text-5xl box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2 md:mb-4">👨‍👩‍👧</div>
+<h3 class="text-[oklch(0.21_0.034_264.665)] text-base md:text-xl font-semibold box-border caret-transparent leading-6 md:leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2 md:mb-3 font-poppins">Family-Friendly</h3>
+<p class="text-[oklch(0.373_0.034_259.733)] text-xs md:text-sm box-border caret-transparent leading-4 md:leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.SA5)]">Plant-based, no allergens</p>
+</div>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center"><a href="#tally-form" class="text-white text-xl font-medium items-center bg-green-700 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] caret-transparent gap-x-2 inline-flex shrink-0 h-9 justify-center leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-2 text-nowrap px-8 py-6 rounded-xl"><span class="box-border caret-transparent block outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-nowrap">Try Aarasa Today - ₹299</span>
+</a>
+</div>
+</div>
+</section>
+<section id="recipes" class="bg-green-100 box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] py-16"><div class="box-border caret-transparent max-w-screen-xl outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mx-auto px-4 md:px-8"><h2 class="text-[oklch(0.21_0.034_264.665)] text-[32px] box-border caret-transparent leading-[48px] outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center mb-12 font-poppins">Simple Ways to Enjoy</h2>
+<div class="box-border caret-transparent gap-x-8 grid grid-cols-none outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-8 mb-12 md:grid-cols-[repeat(2,minmax(0px,1fr))]"><div class="bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] overflow-hidden rounded-2xl"><div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/img/gemini_generated_image_xtcmn5xtcmn5xtcm.png" alt="Classic Carob Drink" class="box-border caret-transparent max-w-full outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-full h-64 object-cover" />
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] p-6"><h3 class="text-[oklch(0.21_0.034_264.665)] text-xl font-semibold box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4 font-poppins">Classic Carob Drink</h3>
+<ol class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] pl-5"><li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">Warm 200ml milk (dairy or plant-based)</li>
+<li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">Add 1 tbsp Aarasa Carob Powder</li>
+<li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">Sweeten with jaggery, honey, or monk fruit</li>
+<li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">Blend until smooth</li>
+<li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Enjoy warm or chilled!</li>
+</ol>
+</div>
+</div>
+<div class="bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] overflow-hidden rounded-2xl"><div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/img/gemini_generated_image_xm3hk6xm3hk6xm3h.png" alt="Healthy Carob Baking - Cookies, Muffins, Brownies, Laddoos" class="box-border caret-transparent max-w-full outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-full h-64 object-cover" />
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] p-6"><h3 class="text-[oklch(0.21_0.034_264.665)] text-xl font-semibold box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4 font-poppins">Healthy Baking</h3>
+<p class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-3">Replace cocoa 1:1 with carob in:</p>
+<ul class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] pl-5"><li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">Cookies</li>
+<li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">Muffins</li>
+<li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">Brownies</li>
+<li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Energy balls & Laddoos</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center mb-8"><button class="text-white text-sm font-medium items-center bg-green-900 caret-transparent gap-x-2 inline-flex shrink-0 h-9 justify-center leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-2 text-left text-nowrap p-3 rounded-xl"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-18.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-nowrap w-4 mr-2" />
+Get 15 Free Recipes (PDF)</button>
+</div>
+<div class="bg-[oklch(0.987_0.022_95.277)] box-border caret-transparent max-w-screen-md outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] border mx-auto p-4 rounded-xl border-solid border-[oklch(0.924_0.12_95.746)]"><div class="box-border caret-transparent gap-x-3 flex outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-3"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-19.svg" alt="Icon" class="text-[oklch(0.666_0.179_58.318)] box-border caret-transparent shrink-0 h-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-6" />
+<p class="text-[oklch(0.278_0.033_256.848)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]"><span class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Taste Note:</span>
+ Carob has its own earthy, naturally sweet flavor—NOT chocolate. Embrace the unique taste!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="nutrition" class="bg-white box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] py-16"><div class="box-border caret-transparent max-w-screen-xl outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mx-auto px-4 md:px-8"><h2 class="text-[oklch(0.21_0.034_264.665)] text-[32px] box-border caret-transparent leading-[48px] outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center mb-12 font-poppins">Lab-Tested Nutrition Facts</h2>
+<p class="text-[oklch(0.446_0.03_256.802)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center mb-12">Based on NABL Accredited Lab Testing</p>
+<div class="box-border caret-transparent gap-x-4 grid grid-cols-[repeat(2,minmax(0px,1fr))] outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-4 mb-12 md:grid-cols-[repeat(4,minmax(0px,1fr))]"><div class="bg-[oklab(0.512026_-0.108731_0.0569469_/_0.1)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center border-green-700 p-4 rounded-xl border-2 border-solid"><p class="text-green-700 text-3xl box-border caret-transparent leading-9 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">37.9g</p>
+<p class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Dietary Fiber</p>
+<p class="text-[oklch(0.446_0.03_256.802)] text-xs box-border caret-transparent leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">(per 100g)</p>
+</div>
+<div class="bg-[oklab(0.512026_-0.108731_0.0569469_/_0.1)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center border-green-700 p-4 rounded-xl border-2 border-solid"><p class="text-green-700 text-3xl box-border caret-transparent leading-9 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">0mg</p>
+<p class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Caffeine</p>
+<p class="text-[oklch(0.446_0.03_256.802)] text-xs box-border caret-transparent leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Completely free</p>
+</div>
+<div class="bg-[oklab(0.512026_-0.108731_0.0569469_/_0.1)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center border-green-700 p-4 rounded-xl border-2 border-solid"><p class="text-green-700 text-3xl box-border caret-transparent leading-9 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">243</p>
+<p class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Energy (kcal)</p>
+<p class="text-[oklch(0.446_0.03_256.802)] text-xs box-border caret-transparent leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">(per 100g)</p>
+</div>
+<div class="bg-[oklab(0.512026_-0.108731_0.0569469_/_0.1)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center border-green-700 p-4 rounded-xl border-2 border-solid"><p class="text-green-700 text-3xl box-border caret-transparent leading-9 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">0mg</p>
+<p class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Cholesterol</p>
+<p class="text-[oklch(0.446_0.03_256.802)] text-xs box-border caret-transparent leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Heart-healthy</p>
+</div>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center">
+<button id="open-lab-report" class="text-green-900 text-sm font-medium items-center bg-white caret-transparent gap-x-2 inline-flex shrink-0 h-9 justify-center leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-2 text-left text-nowrap border border-green-900 px-3 py-2 rounded-[10px] border-solid"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-20.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-nowrap w-4 mr-2" />
+View Complete Lab Certificate (PDF)</button>
+<div class="items-center box-border caret-transparent gap-x-2 flex justify-center outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-2 mt-6"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-21.svg" alt="Icon" class="text-green-900 box-border caret-transparent h-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-5" />
+<span class="text-[oklch(0.373_0.034_259.733)] box-border caret-transparent block outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">NABL Accredited Lab</span>
+</div>
+</div>
+</div>
+</section>
+<section id="testimonials" class="bg-green-100 box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] py-16"><div class="box-border caret-transparent max-w-screen-xl outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mx-auto px-4 md:px-8"><h2 class="text-[oklch(0.21_0.034_264.665)] text-[32px] box-border caret-transparent leading-[48px] outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center mb-12 font-poppins">What Our Customers Say</h2>
+<div class="box-border caret-transparent gap-x-8 grid grid-cols-none outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-8 mb-12 md:grid-cols-[repeat(2,minmax(0px,1fr))]">
+  <div class="bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] p-6 rounded-2xl">
+    <div class="flex items-center gap-4 mb-4">
+      <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-green-700 flex-shrink-0">
+        <img src="https://c.animaapp.com/mgnyzqnsRTQUS5/img/whatsapp-image-2025-10-28-at-20-14-27-%281%29_1.jpeg" alt="Jaydeep Mandge" class="w-full h-full object-cover" style="object-position: center 30%;" />
+      </div>
+      <div>
+        <p class="text-[oklch(0.21_0.034_264.665)] font-semibold">Jaydeep Mandge</p>
+        <p class="text-[oklch(0.446_0.03_256.802)] text-sm">AI & Data Science Consultant</p>
+      </div>
     </div>
-  </section>
-
-  <!-- ========================= 6 REASONS TO LOVE CAROB ========================= -->
-  <section id="benefits" class="bg-white py-16">
-    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
-      <h2 class="text-[oklch(0.21_0.034_264.665)] text-[32px] leading-[48px] text-center mb-12 font-poppins">
-        6 Reasons to Love Carob
-      </h2>
-
-      <!-- ✅ Wrapped with scroll-wrapper -->
-      <div class="scroll-wrapper box-border gap-x-8 grid grid-cols-none gap-y-8 mb-12 md:grid-cols-[repeat(3,minmax(0px,1fr))]">
-        <!-- existing cards stay the same -->
-        <div class="bg-green-100 shadow text-center p-6 rounded-2xl">
-          <div class="text-3xl mb-2">🌾</div>
-          <h3 class="text-[oklch(0.21_0.034_264.665)] text-base md:text-xl font-semibold mb-2 font-poppins">
-            Better Gut Health
-          </h3>
-          <p class="text-[oklch(0.373_0.034_259.733)] text-xs md:text-sm">37.9g fiber per 100g - supports digestion</p>
-        </div>
-
-        <!-- replicate your remaining 5 boxes as-is -->
-        <!-- CARD 2 -->
-        <div class="bg-green-100 shadow text-center p-6 rounded-2xl">
-          <div class="text-3xl mb-2">☕</div>
-          <h3 class="text-[oklch(0.21_0.034_264.665)] text-base md:text-xl font-semibold mb-2 font-poppins">
-            Safe for Everyone
-          </h3>
-          <p class="text-[oklch(0.373_0.034_259.733)] text-xs md:text-sm">Zero caffeine - perfect for kids, pregnant women</p>
-        </div>
-
-        <!-- CARD 3 -->
-        <div class="bg-green-100 shadow text-center p-6 rounded-2xl">
-          <div class="text-3xl mb-2">💪</div>
-          <h3 class="text-[oklch(0.21_0.034_264.665)] text-base md:text-xl font-semibold mb-2 font-poppins">
-            Heart-Healthy
-          </h3>
-          <p class="text-[oklch(0.373_0.034_259.733)] text-xs md:text-sm">0.5g fat, 0mg cholesterol</p>
-        </div>
-
-        <!-- CARD 4 -->
-        <div class="bg-green-100 shadow text-center p-6 rounded-2xl">
-          <div class="text-3xl mb-2">⚡</div>
-          <h3 class="text-[oklch(0.21_0.034_264.665)] text-base md:text-xl font-semibold mb-2 font-poppins">
-            Natural Energy
-          </h3>
-          <p class="text-[oklch(0.373_0.034_259.733)] text-xs md:text-sm">No jitters, no crash</p>
-        </div>
-
-        <!-- CARD 5 -->
-        <div class="bg-green-100 shadow text-center p-6 rounded-2xl">
-          <div class="text-3xl mb-2">🍯</div>
-          <h3 class="text-[oklch(0.21_0.034_264.665)] text-base md:text-xl font-semibold mb-2 font-poppins">
-            Naturally Sweet
-          </h3>
-          <p class="text-[oklch(0.373_0.034_259.733)] text-xs md:text-sm">Reduce added sugar</p>
-        </div>
-
-        <!-- CARD 6 -->
-        <div class="bg-green-100 shadow text-center p-6 rounded-2xl">
-          <div class="text-3xl mb-2">👨‍👩‍👧</div>
-          <h3 class="text-[oklch(0.21_0.034_264.665)] text-base md:text-xl font-semibold mb-2 font-poppins">
-            Family-Friendly
-          </h3>
-          <p class="text-[oklch(0.373_0.034_259.733)] text-xs md:text-sm">Plant-based, no allergens</p>
-        </div>
+    <div class="text-yellow-500 text-xl mb-3">⭐⭐⭐⭐⭐</div>
+    <p class="text-[oklch(0.373_0.034_259.733)] leading-6">"Aarasa is my go-to guilt-free comfort! Pure carob, naturally sweet, and rich in fiber — it blends perfectly in drinks, shakes, and even desserts. It's rare to find something this healthy that actually tastes amazing!"</p>
+  </div>
+  
+  <div class="bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] p-6 rounded-2xl">
+    <div class="flex items-center gap-4 mb-4">
+      <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-green-700 flex-shrink-0 bg-green-100 flex items-center justify-center">
+        <span class="text-2xl text-green-700 font-bold">RS</span>
       </div>
-
-      <div class="text-center">
-        <a href="#order"
-           class="text-white text-xl font-medium items-center bg-green-700 shadow inline-flex h-9 justify-center leading-7 px-8 py-6 rounded-xl">
-          <span>Try Aarasa Today - ₹299</span>
-        </a>
+      <div>
+        <p class="text-[oklch(0.21_0.034_264.665)] font-semibold">Rahul Sharma</p>
+        <p class="text-[oklch(0.446_0.03_256.802)] text-sm">Pune</p>
       </div>
     </div>
-  </section>
+    <div class="text-yellow-500 text-xl mb-3">⭐⭐⭐⭐⭐</div>
+    <p class="text-[oklch(0.373_0.034_259.733)] leading-6">"Perfect for my morning routine. I was a heavy coffee drinker, but carob gives me energy without the afternoon crash. Game changer!"</p>
+  </div>
+  
+  <div class="bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] p-6 rounded-2xl">
+    <div class="flex items-center gap-4 mb-4">
+      <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-green-700 flex-shrink-0 bg-green-100 flex items-center justify-center">
+        <span class="text-2xl text-green-700 font-bold">AD</span>
+      </div>
+      <div>
+        <p class="text-[oklch(0.21_0.034_264.665)] font-semibold">Dr. Anita Desai</p>
+        <p class="text-[oklch(0.446_0.03_256.802)] text-sm">Nutritionist, Bangalore</p>
+      </div>
+    </div>
+    <div class="text-yellow-500 text-xl mb-3">⭐⭐⭐⭐⭐</div>
+    <p class="text-[oklch(0.373_0.034_259.733)] leading-6">"As a nutritionist, I recommend Aarasa to all my clients. Pure, natural, and the fiber content is incredible. Great for gut health!"</p>
+  </div>
+  
+  <div class="bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] p-6 rounded-2xl">
+    <div class="flex items-center gap-4 mb-4">
+      <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-green-700 flex-shrink-0 bg-green-100 flex items-center justify-center">
+        <span class="text-2xl text-green-700 font-bold">NP</span>
+      </div>
+      <div>
+        <p class="text-[oklch(0.21_0.034_264.665)] font-semibold">Neha Patil</p>
+        <p class="text-[oklch(0.446_0.03_256.802)] text-sm">Delhi</p>
+      </div>
+    </div>
+    <div class="text-yellow-500 text-xl mb-3">⭐⭐⭐⭐⭐</div>
+    <p class="text-[oklch(0.373_0.034_259.733)] leading-6">"I'm pregnant and had to quit coffee. Carob is my new comfort drink - naturally sweet, safe, and actually good for me!"</p>
+  </div>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center"><h3 class="text-[oklch(0.21_0.034_264.665)] text-2xl box-border caret-transparent leading-8 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4 font-poppins">Join Our Community</h3>
+<p class="text-[oklch(0.373_0.034_259.733)] text-lg box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4">Join the movement towards a healthy eating, follow us on Instagram & Share your #AarasaCarob moment.</p>
+<a href="https://www.instagram.com/officialaarasa/" target="_blank" rel="noopener noreferrer" class="text-white text-lg font-medium items-center bg-green-700 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] caret-transparent gap-x-2 inline-flex shrink-0 h-9 justify-center leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-2 text-nowrap px-8 py-3 rounded-xl"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-40.svg" alt="Instagram" class="box-border caret-transparent h-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-5" />
+<span class="box-border caret-transparent block outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-nowrap">Follow @officialaarasa</span>
+</a>
+</div>
+</div>
+</section>
+<section id="order" class="bg-white box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] py-16"><div class="box-border caret-transparent max-w-screen-xl outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mx-auto px-4 md:px-8"><h2 class="text-[oklch(0.21_0.034_264.665)] text-[32px] box-border caret-transparent leading-[48px] outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center mb-12 font-poppins">Choose Your Pack</h2>
+<div class="box-border caret-transparent gap-x-8 grid grid-cols-none max-w-screen-lg outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-8 mb-12 mx-auto md:grid-cols-[repeat(2,minmax(0px,1fr))]"><div class="bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] border p-6 rounded-2xl border-solid border-[oklch(0.928_0.006_264.531)]"><h3 class="text-[oklch(0.21_0.034_264.665)] text-2xl font-semibold box-border caret-transparent leading-8 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4 font-poppins">Single Pack</h3>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><p class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">200g Premium Carob Powder</p>
+<div class="items-baseline box-border caret-transparent gap-x-2 flex outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-2"><span class="text-[oklch(0.21_0.034_264.665)] text-3xl font-bold box-border caret-transparent leading-9 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">₹299</span>
+<span class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] line-through">₹399</span>
+</div>
+<p class="text-green-700 text-sm font-semibold box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Save ₹100 (25% OFF)</p>
+</div>
+<ul class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] pl-5"><li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">✓ Perfect for trying carob</li>
+<li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">✓ Lasts 2-3 weeks</li>
+<li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">✓ Free recipe booklet</li>
+<li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">✓ Shipping: ₹50</li>
+</ul>
+</div>
+<div class="bg-green-50 shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_10px_15px_-3px,rgba(0,0,0,0.1)_0px_4px_6px_-4px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] relative border-green-700 p-6 rounded-2xl border-2 border-solid"><div class="absolute bg-green-700 box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] px-4 py-1 rounded-bl rounded-br rounded-tl rounded-tr -top-3 right-6"><span class="text-white text-xs font-semibold box-border caret-transparent block leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">BEST VALUE</span>
+</div>
+<h3 class="text-[oklch(0.21_0.034_264.665)] text-2xl font-semibold box-border caret-transparent leading-8 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4 font-poppins">Family Pack (3 x 200g)</h3>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4"><p class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">600g Premium Carob Powder (3 pouches)</p>
+<div class="items-baseline box-border caret-transparent gap-x-2 flex outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-2"><span class="text-[oklch(0.21_0.034_264.665)] text-3xl font-bold box-border caret-transparent leading-9 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">₹799</span>
+<span class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] line-through">₹1197</span>
+</div>
+<p class="text-green-700 text-sm font-semibold box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Save ₹398 (33% OFF) + FREE Shipping</p>
+</div>
+<ul class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] pl-5"><li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">✓ Best for families</li>
+<li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">✓ Lasts 2-3 months</li>
+<li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">✓ Free recipe booklet</li>
+<li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">✓ FREE Shipping</li>
+</ul>
+</div>
+</div>
 
-  <!-- other sections below unchanged -->
+<div id="tally-form" class="box-border caret-transparent max-w-screen-lg outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-12 mx-auto">
+<h3 class="text-[oklch(0.21_0.034_264.665)] text-2xl font-semibold box-border caret-transparent leading-8 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-6 text-center font-poppins">Place Your Order</h3>
+<div class="bg-white shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.1)_0px_4px_6px_-1px,rgba(0,0,0,0.1)_0px_2px_4px_-2px] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] p-6 rounded-2xl">
+<iframe data-tally-src="https://tally.so/embed/mBMOQ5?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1084" frameborder="0" marginheight="0" marginwidth="0" title="Fill out the details below"></iframe>
+</div>
+</div>
+<div class="box-border caret-transparent gap-x-4 grid grid-cols-none outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-4 mb-8 md:grid-cols-[repeat(4,minmax(0px,1fr))]"><div class="items-center bg-green-100 box-border caret-transparent gap-x-3 flex outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-3 p-4 rounded-xl"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-26.svg" alt="Icon" class="text-green-900 box-border caret-transparent shrink-0 h-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-6" />
+<p class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Free Shipping on orders above ₹499</p>
+</div>
+<div class="items-center bg-green-100 box-border caret-transparent gap-x-3 flex outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-3 p-4 rounded-xl"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-27.svg" alt="Icon" class="text-green-900 box-border caret-transparent shrink-0 h-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-6" />
+<p class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">7-Day Money-Back Guarantee</p>
+</div>
+<div class="items-center bg-green-100 box-border caret-transparent gap-x-3 flex outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-3 p-4 rounded-xl"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-28.svg" alt="Icon" class="text-green-900 box-border caret-transparent shrink-0 h-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-6" />
+<p class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Secure Payment via Razorpay</p>
+</div>
+<div class="items-center bg-green-100 box-border caret-transparent gap-x-3 flex outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-3 p-4 rounded-xl"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-29.svg" alt="Icon" class="text-green-900 box-border caret-transparent shrink-0 h-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-6" />
+<p class="text-[oklch(0.373_0.034_259.733)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">FSSAI Approved &amp; Lab Tested</p>
+</div>
+</div>
+<div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center"><p class="text-[oklch(0.446_0.03_256.802)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2">We accept</p>
+<div class="box-border caret-transparent gap-x-4 flex flex-wrap justify-center outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-4"><span class="text-[oklch(0.373_0.034_259.733)] text-sm bg-[oklch(0.967_0.003_264.542)] box-border caret-transparent block leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] px-4 py-2 rounded-bl rounded-br rounded-tl rounded-tr">UPI</span>
+<span class="text-[oklch(0.373_0.034_259.733)] text-sm bg-[oklch(0.967_0.003_264.542)] box-border caret-transparent block leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] px-4 py-2 rounded-bl rounded-br rounded-tl rounded-tr">Credit Card</span>
+<span class="text-[oklch(0.373_0.034_259.733)] text-sm bg-[oklch(0.967_0.003_264.542)] box-border caret-transparent block leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] px-4 py-2 rounded-bl rounded-br rounded-tl rounded-tr">Debit Card</span>
+<span class="text-[oklch(0.373_0.034_259.733)] text-sm bg-[oklch(0.967_0.003_264.542)] box-border caret-transparent block leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] px-4 py-2 rounded-bl rounded-br rounded-tl rounded-tr">Net Banking</span>
+</div>
+</div>
+</div>
+</section>
 
+ <footer class="text-white bg-green-900 box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">
+  <div class="box-border caret-transparent max-w-screen-xl outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mx-auto px-4 py-12 md:px-8">
+    <div class="box-border caret-transparent gap-x-8 grid grid-cols-none outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-8 mb-8 md:grid-cols-[repeat(3,minmax(0px,1fr))]">
+      <div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">
+        <div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4">
+          <img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/b1e99f0b37b1f18babe97f13fcbfea39624674c9.png" alt="Aarasa Icon" class="box-border caret-transparent h-16 max-w-full outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]" />
+        </div>
+        <p class="text-[oklch(0.928_0.006_264.531)] text-sm box-border caret-transparent leading-[22.75px] outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4">Bringing ancient Mediterranean superfoods to modern Indian homes. We source premium carob from Spain and carefully pack it in Pune with love and care for every family.</p>
+        <p class="text-[oklch(0.928_0.006_264.531)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Crafted with care for every Indian home 💚</p>
+      </div>
+      <div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">
+        <h3 class="text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4 font-poppins">QUICK LINKS</h3>
+        <ul class="text-sm box-border caret-transparent leading-5 list-none outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] pl-0">
+          <li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2"><a href="index.html#home" class="text-[oklch(0.928_0.006_264.531)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Home</a></li>
+          <li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2"><a href="about-us.html" class="text-[oklch(0.928_0.006_264.531)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">About Us</a></li>
+          <li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2"><a href="index.html#tally-form" class="text-[oklch(0.928_0.006_264.531)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Products</a></li>
+          <li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2"><a href="faq.html" class="text-[oklch(0.928_0.006_264.531)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">FAQs</a></li>
+          <li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2"><a href="shipping-policy.html" class="text-[oklch(0.928_0.006_264.531)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Shipping Policy</a></li>
+          <li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2"><a href="privacy-policy.html" class="text-[oklch(0.928_0.006_264.531)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Privacy Policy</a></li>
+          <li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-2"><a href="terms-and-conditions.html" class="text-[oklch(0.928_0.006_264.531)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Terms &amp; Conditions</a></li>
+          <li class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]"><a href="return-refund-policy.html" class="text-[oklch(0.928_0.006_264.531)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Return &amp; Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">
+        <h3 class="text-xl box-border caret-transparent leading-7 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mb-4 font-poppins">CONTACT US</h3>
+        <div class="text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">
+          <div class="items-start box-border caret-transparent gap-x-3 flex outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-3 mb-3"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-36.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-5 mt-0.5" />
+            <div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">
+              <p class="text-[oklch(0.928_0.006_264.531)] text-base box-border caret-transparent leading-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Email</p>
+              <a href="mailto://connect@aarasa.in" class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">connect@aarasa.in</a>
+            </div>
+          </div>
+          <div class="items-start box-border caret-transparent gap-x-3 flex outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-3 mb-3"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-37.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-5 mt-0.5" />
+            <div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">
+              <p class="text-[oklch(0.928_0.006_264.531)] text-base box-border caret-transparent leading-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Phone</p>
+              <a href="tel://+918788988026" class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">+91-8788988026</a>
+            </div>
+          </div>
+          <div class="items-start box-border caret-transparent gap-x-3 flex outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-3 mb-3"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-38.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-5 mt-0.5" />
+            <div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">
+              <p class="text-[oklch(0.928_0.006_264.531)] text-base box-border caret-transparent leading-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">WhatsApp</p>
+              <a href="https://wa.me/918788988026" class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.Two_0.5)]">+91-8788988026</a>
+            </div>
+          </div>
+          <div class="items-start box-border caret-transparent gap-x-3 flex outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-3 mb-3"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-39.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-5 mt-0.5" />
+            <div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">
+              <p class="text-[oklch(0.928_0.006_264.531)] box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Address</p>
+              <p class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Aarasa Innovations<br class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]" />
+                Plot 10, Lane 6/2, Survey No. 74/2<br class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]" />
+                Sant Nagar, Lohegaon<br class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]" />
+                Pune 411047, Maharashtra, India</p>
+            </div>
+          </div>
+          <div class="items-start box-border caret-transparent gap-x-3 flex outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-3 mb-3"><img src="https://c.animaapp.com/mgnyzqnsRTQUS5/assets/icon-40.svg" alt="Icon" class="box-border caret-transparent shrink-0 h-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] w-5 mt-0.5" />
+            <div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">
+              <p class="text-[oklch(0.928_0.006_264.531)] text-base box-border caret-transparent leading-6 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Instagram</p>
+              <a href="https://instagram.com/officialaarasa" class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">@officialaarasa</a>
+            </div>
+          </div>
+          <div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] mt-4">
+            <p class="text-[oklch(0.928_0.006_264.531)] text-xs box-border caret-transparent leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">FSSAI Lic. No.: 21525083006936</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] pt-8 border-t border-solid border-[oklab(0.999994_0.0000455678_0.0000200868_/_0.2)]">
+      <div class="items-center box-border caret-transparent gap-x-4 flex flex-col justify-between outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-4 md:flex-row">
+        <div class="box-border caret-transparent gap-x-4 flex flex-wrap justify-center outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] gap-y-4"><span class="text-[oklch(0.872_0.01_258.338)] text-xs box-border caret-transparent block leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Razorpay</span>
+          <span class="text-[oklch(0.872_0.01_258.338)] text-xs box-border caret-transparent block leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">UPI</span>
+          <span class="text-[oklch(0.872_0.01_258.338)] text-xs box-border caret-transparent block leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Visa</span>
+          <span class="text-[oklch(0.872_0.01_258.338)] text-xs box-border caret-transparent block leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Mastercard</span>
+          <span class="text-[oklch(0.872_0.01_258.338)] text-xs box-border caret-transparent block leading-4 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)]">Paytm</span>
+        </div>
+        <div class="box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center md:text-right">
+          <p class="text-[oklch(0.928_0.006_264.531)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center md:text-right">© 2025 Aarasa Innovations. All rights reserved.</p>
+          <p class="text-[oklch(0.928_0.006_264.531)] text-sm box-border caret-transparent leading-5 outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] text-center md:text-right">🇮🇳 Proudly serving Indian families since 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/918788988026?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20Aarasa%20Carob%20Powder" aria-label="Chat on WhatsApp" class="fixed right-6 bottom-6 z-50 text-white bg-green-500 hover:bg-green-600 shadow-lg block p-4 rounded-full">
+  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
+
+<div id="pdf-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-[100] hidden p-4">
+  <div class="bg-white rounded-lg shadow-2xl w-full max-w-4xl h-[90vh] flex flex-col">
+    <div class="flex justify-between items-center p-4 border-b">
+      <h3 class="text-lg font-semibold font-poppins text-zinc-800">Aarasa Carob Powder - Lab Certificate</h3>
+      <button id="close-lab-report" class="text-zinc-500 hover:text-zinc-800">&times;</button>
+    </div>
+    <div class="flex-1 p-2">
+      <iframe src="Aarasa-Lab-Report.pdf" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="fixed left-6 bottom-6 z-50">
+  <button id="scroll-to-top" aria-label="Scroll to top" class="hidden text-white bg-green-700 shadow-lg p-3 rounded-lg">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+  </button>
+</div>
+  
+<script src="script.js"></script>
+<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
 </body>
+
 </html>
