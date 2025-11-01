@@ -129,44 +129,7 @@
       font-style: normal;
     }
   </style>
-  <style>
-@media (max-width: 768px) {
-  #comparison .scroll-wrapper,
-  #benefits .scroll-wrapper {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    -webkit-overflow-scrolling: touch !important;
-    scroll-snap-type: x mandatory !important;
-    gap: 1rem !important;
-    padding-bottom: 1rem !important;
-  }
-
-  #comparison .scroll-wrapper > div {
-    min-width: 100% !important; /* show 1 box */
-    flex-shrink: 0 !important;
-    scroll-snap-align: center !important;
-  }
-
-  #benefits .scroll-wrapper > div {
-    min-width: 48% !important; /* show 2 boxes */
-    flex-shrink: 0 !important;
-    scroll-snap-align: center !important;
-  }
-
-  #comparison .scroll-wrapper::-webkit-scrollbar,
-  #benefits .scroll-wrapper::-webkit-scrollbar {
-    display: none;
-  }
-
-  #comparison .scroll-wrapper,
-  #benefits .scroll-wrapper {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-}
-</style>  
+ 
 </head>
 <body class="text-zinc-800 ... font-open_sans">
   <section class="relative bg-white box-border caret-transparent outline-[oklab(0.512026_-0.108731_0.0569469_/_0.5)] overflow-hidden">
