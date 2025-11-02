@@ -10,40 +10,18 @@ header {
   top: 0 !important;
 }
 
-/* Mobile scrollable sections & compact layout */
 
-/* --- MOBILE HORIZONTAL SCROLL FIX --- */
-@media (max-width: 768px) {
-  /* --- WHAT MAKES CAROB SPECIAL --- */
-  #comparison .box-border,
-  #comparison .grid {
+/* What makes carob special - 1-box scroll */
+  #comparison .box-border.gap-x-8 { /* <--- DELETE STARTING HERE */
     display: flex !important;
     flex-wrap: nowrap !important;
-    flex-direction: row !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    scroll-snap-type: x mandatory !important;
-    -webkit-overflow-scrolling: touch !important;
-    gap: 1rem !important;
-    padding-bottom: 1rem !important;
+    /* ... all rules for #comparison inside the @media block ... */
+  }
+  
+  #comparison .box-border.gap-x-8 > div {
+    /* ... all rules for #comparison > div inside the @media block ... */
   }
 
-  #comparison .box-border > div,
-  #comparison .grid > div {
-    min-width: 100% !important; /* 1 box visible */
-    flex-shrink: 0 !important;
-    scroll-snap-align: center !important;
-  }
-
-  #comparison .box-border::-webkit-scrollbar,
-  #comparison .grid::-webkit-scrollbar {
-    display: none;
-  }
-  #comparison .box-border,
-  #comparison .grid {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
 
   /* --- 6 REASONS TO LOVE CAROB --- */
   #benefits .box-border,
