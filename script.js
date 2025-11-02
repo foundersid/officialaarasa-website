@@ -304,3 +304,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.getElementById('testimonial-carousel');
+    const prevButton = document.getElementById('prev-testimonial');
+    const nextButton = document.getElementById('next-testimonial');
+
+    if (carousel && prevButton && nextButton) {
+        const scrollDistance = 320; // Adjust this value to match one card width + margin
+
+        nextButton.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: scrollDistance,
+                behavior: 'smooth'
+            });
+        });
+
+        prevButton.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: -scrollDistance,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // Hide scrollbar on the carousel element for cleaner look
+    if (carousel) {
+        carousel.style.scrollbarWidth = 'none'; // Firefox
+        carousel.style.msOverflowStyle = 'none'; // IE and Edge
+        carousel.insertAdjacentHTML('afterbegin', '<style>:::-webkit-scrollbar{display:none}</style>'); // WebKit (Chrome, Safari)
+    }
+});
