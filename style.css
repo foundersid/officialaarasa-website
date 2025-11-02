@@ -418,6 +418,17 @@ a:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Add this block for the recipe cards */
+#recipes .bg-white { 
+  transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+}
+
+#recipes .bg-white:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+
 /* Image animations */
 img {
   transition: transform 0.4s ease, filter 0.3s ease;
