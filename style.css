@@ -618,6 +618,30 @@ span[class*="bg-[oklch(0.967"]:hover {
   background-size: 1000px 100%;
 }
 
+/* New Animations for Scroll Reveal */
+.reveal-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal-slide-in-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal-slide-in-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* The state when it becomes visible */
+.scroll-reveal {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+
+
 /* NEW: PDF Modal Styles */
 #pdf-modal {
   opacity: 0;
