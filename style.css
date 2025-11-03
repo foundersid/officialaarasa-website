@@ -694,3 +694,30 @@ span[class*="bg-[oklch(0.967"]:hover {
 .animate-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
+
+
+/* --- New Animation Classes --- */
+
+/* Initial state (hidden) */
+.reveal-fade-in,
+.reveal-slide-in-left,
+.reveal-slide-in-right {
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal-fade-in {
+  transform: translateY(30px);
+}
+.reveal-slide-in-left {
+  transform: translateX(-40px);
+}
+.reveal-slide-in-right {
+  transform: translateX(40px);
+}
+
+/* Final state (visible) - This class is added by script.js */
+.scroll-reveal {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
