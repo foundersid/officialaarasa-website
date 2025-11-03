@@ -335,3 +335,16 @@ document.addEventListener('DOMContentLoaded', () => {
         carousel.insertAdjacentHTML('afterbegin', '<style>:::-webkit-scrollbar{display:none}</style>'); // WebKit (Chrome, Safari)
     }
 });
+
+
+// Promotion Bar Close Button
+document.addEventListener('DOMContentLoaded', () => {
+  const promoBar = document.getElementById('promo-bar');
+  const closePromoBtn = document.getElementById('close-promo-btn');
+
+  if (promoBar && closePromoBtn) {
+    closePromoBtn.addEventListener('click', () => {
+      promoBar.style.display = 'none';
+    });
+  }
+});
