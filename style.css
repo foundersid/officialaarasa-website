@@ -640,3 +640,33 @@ span[class*="bg-[oklch(0.967"]:hover {
 #pdf-modal #close-lab-report:hover {
   transform: scale(1.1);
 }
+
+/* Promotion Bar Styles */
+#promo-bar {
+  font-family: 'Poppins', sans-serif;
+}
+
+#close-promo-btn {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* Animation for the promo text */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Promotion Bar Styles */
+#promo-bar {
+  font-family: 'Poppins', sans-serif;
+}
+
+#close-promo-btn {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* Animation for the promo text */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
