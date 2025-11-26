@@ -348,3 +348,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// --- Meta Pixel Custom Event Tracking ---
+document.addEventListener('DOMContentLoaded', () => {
+    // Target all anchor tags that lead to the Tally form section
+    const initiateCheckoutLinks = document.querySelectorAll('a[href="#tally-form"]');
+
+    if (initiateCheckoutLinks.length > 0) {
+        initiateCheckoutLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Check if the fbq function (Pixel) is available
+                if (typeof fbq === 'function') {
+                    // Send the standard InitiateCheckout event
+                    fbq('track', 'InitiateCheckout', {
+                        content_name: 'Carob Powder Pack Selection',
+                        content_category: 'Superfood',
+                        value: 0.00, // Placeholder; value should be dynamic in a full backend
+                        currency: 'INR' 
+                    });
+                    console.log('Meta Pixel Event: InitiateCheckout Fired.');
+                }
+            });
+        });
+    }
+});
